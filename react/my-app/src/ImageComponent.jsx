@@ -11,7 +11,6 @@ function ImageComponent(){
         console.log("y: " + e.clientY);
     };
 
-
   useEffect(() => {
     window.addEventListener("mousedown", mouseClick)
   })
