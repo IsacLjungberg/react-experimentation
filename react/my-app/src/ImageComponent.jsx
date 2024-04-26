@@ -16,8 +16,6 @@ function ImageComponent(){
     window.addEventListener("mousedown", mouseClick)
   })
 
-    ref
-
     console.log(this);
 
     return <img src={fish} alt = "fish" />
