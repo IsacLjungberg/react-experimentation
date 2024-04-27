@@ -2,17 +2,21 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import TestPage from './pages/TestPage'
 import TestNotes from './TestNotes'
-
 import reportWebVitals from './reportWebVitals';
 
 import { createBrowserRouter, RouterProvider} from 'react-router-dom';
+import Magic from './pages/Magic';
+
+const dictionary = {
+  words: <h1>Pasta</h1>
+};
 
 const router = createBrowserRouter([
   {path: '/', element: <App />},
-  {path: '/pages/TestPage', element: <TestPage />},
-  {path: '/testNotes', element: <TestNotes />}
+  {path: '/testNotes', element: <TestNotes />},
+  {path: '/pages/Magic', element: <Magic 
+    dictionary = {dictionary}/>}
 ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

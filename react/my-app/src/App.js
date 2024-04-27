@@ -2,7 +2,6 @@ import logo from './logo.svg';
 import ImageBox from './ImageBox'
 import './App.css';
 import React, {useEffect, useState} from 'react';
-import TestPage from './pages/TestPage';
 
 function App() {
 
