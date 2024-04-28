@@ -7,15 +7,20 @@ import reportWebVitals from './reportWebVitals';
 
 import { createBrowserRouter, RouterProvider} from 'react-router-dom';
 import Magic from './pages/Magic';
+import Fey from './pages/Fey';
 
 const dictionary = {
-  words: <h1>Pasta</h1>
+  Fey: <a href = "/pages/Fey">Fey</a>,
+  Magic: <a href = "/pages/Magic">Magic</a>
 };
 
 const router = createBrowserRouter([
   {path: '/', element: <App />},
-  {path: '/testNotes', element: <TestNotes />},
+  {path: '/testNotes', element: <TestNotes 
+    dictionary = {dictionary}/>},
   {path: '/pages/Magic', element: <Magic 
+    dictionary = {dictionary}/>},
+  {path: '/pages/Fey', element: <Fey 
     dictionary = {dictionary}/>}
 ])
 
