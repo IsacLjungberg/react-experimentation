@@ -8,10 +8,16 @@ import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider} from 'react-router-dom';
 import Magic from './pages/Magic';
 import Fey from './pages/Fey';
+import NovaFerûnCore from './pages/Nova Ferûn/NovaFerûnCore';
+import Template from './pages/Template';
 
 const dictionary = {
   Fey: <a href = "/pages/Fey">Fey</a>,
-  Magic: <a href = "/pages/Magic">Magic</a>
+  Magic: <a href = "/pages/Magic">Magic</a>,
+
+  ErikCederén: <a href = "/pages/NovaFerûn/ErikCederén">Erik Cederên</a>,
+  Karanax: <a href = "/pages/NovaFerûn/Karanax">Karanax</a>,
+  Senarax: <a href = "/pages/NovaFerûn/Senarax">Senarax Döttsbindaren</a>
 };
 
 const router = createBrowserRouter([
@@ -21,6 +27,10 @@ const router = createBrowserRouter([
   {path: '/pages/Magic', element: <Magic 
     dictionary = {dictionary}/>},
   {path: '/pages/Fey', element: <Fey 
+    dictionary = {dictionary}/>},
+    {path: '/pages/Template', element: <Template 
+    dictionary = {dictionary}/>},
+  {path: '/pages/NovaFerûn/Core', element: <NovaFerûnCore 
     dictionary = {dictionary}/>}
 ])
 
