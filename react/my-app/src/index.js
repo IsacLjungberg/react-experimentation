@@ -8,17 +8,23 @@ import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider} from 'react-router-dom';
 import Magic from './pages/Magic';
 import Fey from './pages/Fey';
-import NovaFerûnCore from './pages/Nova Ferûn/NovaFerûnCore';
 import Template from './pages/Template';
+
+
+import NovaFerûn from './pages/NovaFerûn/NovaFerûn';
+import FerûnWrapper from './pages/NovaFerûn/FerûnWrapper';
+  import ErikCederén from './pages/NovaFerûn/ErikCederén';
+  //import Karanax from './pages/NovaFerûn/Karanax';
+  //import Döttsviskarna from './pages/NovaFerûn/Döttsviskarna';
+import ferûnDictionaryFunction from './pages/NovaFerûn/dictionary';
+
 
 const dictionary = {
   Fey: <a href = "/pages/Fey">Fey</a>,
   Magic: <a href = "/pages/Magic">Magic</a>,
-
-  ErikCederén: <a href = "/pages/NovaFerûn/ErikCederén">Erik Cederên</a>,
-  Karanax: <a href = "/pages/NovaFerûn/Karanax">Karanax</a>,
-  Senarax: <a href = "/pages/NovaFerûn/Senarax">Senarax Döttsbindaren</a>
 };
+
+const ferûnDictionary = ferûnDictionaryFunction();
 
 const router = createBrowserRouter([
   {path: '/', element: <App />},
@@ -30,8 +36,11 @@ const router = createBrowserRouter([
     dictionary = {dictionary}/>},
     {path: '/pages/Template', element: <Template 
     dictionary = {dictionary}/>},
-  {path: '/pages/NovaFerûn/Core', element: <NovaFerûnCore 
-    dictionary = {dictionary}/>}
+
+  {path: '/pages/NovaFerûn', element: <NovaFerûn/>},
+  {path: '/pages/NovaFerûn/ErikCederén', element: <FerûnWrapper Contents = {ErikCederén} dictionary = {ferûnDictionary}/>},
+  //{path: '/pages/Karanax', element: <Karanax/>},
+  //{path: '/pages/Döttsviskarna', element: <Döttsviskarna/>},
 ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
