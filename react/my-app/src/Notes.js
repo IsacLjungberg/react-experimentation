@@ -14,12 +14,8 @@ export default function Notes({saveName}){
         setTextBoxValue(localStorage.getItem(saveName))
     }, [])
     
-    return <>
-        <form>
-            Write something:
-            
-        </form>
-
+    return <div>
         <textarea name="NoteText" value = {textBoxValue} onChange={textChange}/>
-    </>;
+        Notes for: {saveName}
+    </div>;
 }

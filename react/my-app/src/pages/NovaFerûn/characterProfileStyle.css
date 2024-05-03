@@ -2,11 +2,18 @@
     border: solid black;
     padding: 10px;
     max-width: 400px;
+    margin-bottom: 30px;
 }
 
 .characterProfileName{
     font-size: 150%;
     text-align: center;
+    padding-bottom: 10px;
+}
+
+.characterProfileSummary{
+    text-align: center;
+    font-style: italic;
     padding-bottom: 10px;
 }
 

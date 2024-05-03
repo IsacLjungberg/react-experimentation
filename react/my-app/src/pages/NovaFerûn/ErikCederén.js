@@ -2,6 +2,7 @@ import React from 'react';
 import Notes from '../../Notes'
 import './FerûnStyle.css'
 import ErikCederénProfile from './Profiles/ErikCederénProfile'
+import ErikCederénImg from './Assets/ErikCederén.jpg'
 
 export default function ErikCederén({dictionary}){
 
@@ -10,8 +11,11 @@ export default function ErikCederén({dictionary}){
 
     return <>
         <h1>{pageTitle}</h1>
+        
 
-        <ErikCederénProfile/>
+        <div style = {{columnCount: 2}}><ErikCederénProfile/>
+        <img src={ErikCederénImg} width="300"></img>
+        </div>
 
         {pageHTML}
         <Notes saveName = {pageTitle}/>
@@ -19,7 +23,7 @@ export default function ErikCederén({dictionary}){
 
     function FileText(){
         return <>
-            Text
+            
 
             
         </>

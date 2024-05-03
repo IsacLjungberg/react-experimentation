@@ -1,12 +1,9 @@
 import React from 'react';
 import Notes from '../../Notes'
-import Core from './Core'
-import { Route, Routes} from 'react-router';
-import { BrowserRouter } from 'react-router-dom';
 
 export default function NovaFerûn(){
 
-    const pageTitle = "NovaFerûn";
+    const pageTitle = "Nova Ferûn";
     const pageHTML = FileText();
 
     return <>
@@ -20,7 +17,7 @@ export default function NovaFerûn(){
         return <>
             Text
 
-            <a href="/pages/NovaFerûn/Core">Test Core</a>
+            
 
             
 
