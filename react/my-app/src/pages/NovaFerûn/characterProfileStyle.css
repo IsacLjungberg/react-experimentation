@@ -1,0 +1,38 @@
+.characterProfileBox{
+    border: solid black;
+    padding: 10px;
+    max-width: 400px;
+}
+
+.characterProfileName{
+    font-size: 150%;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.fieldTitle{
+    font-size: 75%;
+    display: block;
+    text-decoration: underline;
+}
+
+.characterProfileElement{
+    padding-bottom: 10px;
+    break-inside: avoid-column;
+    border-top: solid black;
+}
+
+.characterProfileAbilities{
+    border: solid black;
+}
+
+ul{
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 4px;
+    padding-left: 0;
+}
+
+li{
+    padding-bottom: 6px;
+}

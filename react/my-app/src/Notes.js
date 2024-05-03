@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 
-export default function TestNotes({saveName}){
+export default function Notes({saveName}){
     const [textBoxValue, setTextBoxValue] = useState(""); 
 
     const textChange = event => {
