@@ -15,6 +15,7 @@ import NovaFerûn from './pages/NovaFerûn/NovaFerûn';
 import FerûnWrapper from './pages/NovaFerûn/FerûnWrapper';
   import ErikCederén from './pages/NovaFerûn/ErikCederén';
   import Dimdjupet from './pages/NovaFerûn/Dimdjupet';
+  import CurrentSession from './pages/NovaFerûn/CurrentSession';
 import ferûnDictionaryFunction from './pages/NovaFerûn/dictionary';
 
 
@@ -37,8 +38,10 @@ const router = createBrowserRouter([
     dictionary = {dictionary}/>},
 
   {path: '/pages/NovaFerûn/NovaFerûn', element: <FerûnWrapper Contents = {NovaFerûn} dictionary = {ferûnDictionary}/>},
+  {path: '/pages/NovaFerûn', element: <FerûnWrapper Contents = {NovaFerûn} dictionary = {ferûnDictionary}/>},
   {path: '/pages/NovaFerûn/ErikCederén', element: <FerûnWrapper Contents = {ErikCederén} dictionary = {ferûnDictionary}/>},
   {path: '/pages/NovaFerûn/Dimdjupet', element: <FerûnWrapper Contents = {Dimdjupet} dictionary = {ferûnDictionary}/>},
+  {path: '/pages/NovaFerûn/CurrentSession', element: <FerûnWrapper Contents = {CurrentSession} dictionary = {ferûnDictionary}/>},
 ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

@@ -4,6 +4,7 @@ import './FerûnStyle.css'
 import KaranaxProfile from './Profiles/KaranaxProfile'
 import KaranaxStatblock from './Assets/blackDragonKaranax.png'
 import VenryxProfile from './Profiles/VenryxProfile';
+import SenaraxProfile from './Profiles/SenaraxProfile';
 
 export default function ErikCederén({dictionary}){
 
@@ -25,17 +26,19 @@ export default function ErikCederén({dictionary}){
         <h2>Karanax</h2>
         <KaranaxProfile/>
 
-        <button onClick = {expandKaraStatblock}>Statblock</button>
+        <button onClick = {expandKaraStatblock}>Karanax Statblock</button>
         {karaStatblockVisible && <img src = {KaranaxStatblock} alt = "altered black dragons statblock" width="100%"/>}
         <br/><br/>
         <VenryxProfile/>
 
         <h2>Döttsviskarna</h2>
+        <SenaraxProfile/>
 
         <h2>Flodsvandrarna</h2>
 
         <h2>Skuggbladen</h2>
 
+        <h2>Notes</h2>
         <Notes saveName = {pageTitle}/>
     </>
 

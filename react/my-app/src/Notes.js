@@ -6,13 +6,17 @@ export default function Notes({saveName}){
     const textChange = event => {
         const text = event.target.value;
 
-        localStorage.setItem(saveName, text);
+        const actualSaveName = "Notes " + saveName;
+
+        localStorage.setItem(actualSaveName, text);
         setTextBoxValue(text);
     }
 
     useEffect(() => {
-        setTextBoxValue(localStorage.getItem(saveName))
-    }, [])
+        const actualSaveName = "Notes " + saveName;
+
+        setTextBoxValue(localStorage.getItem(actualSaveName))
+    }, [saveName])
     
     return <div>
         <textarea name="NoteText" value = {textBoxValue} onChange={textChange}/>
