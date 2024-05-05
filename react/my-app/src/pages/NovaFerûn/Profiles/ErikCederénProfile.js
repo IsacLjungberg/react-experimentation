@@ -39,6 +39,8 @@ export default function ErikCederénProfile({dictionary}){
             abilities = {
                 <div>Massive wealth</div>
             }
+
+            other = "Test"
         />
     </>
 }

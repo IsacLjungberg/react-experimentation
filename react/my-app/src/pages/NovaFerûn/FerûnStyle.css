@@ -11,10 +11,6 @@ main{
     border-bottom: solid black;
 }
 
-img{
-    border: solid black;
-}
-
 .sideImg{
     position: absolute;
     top: 0;

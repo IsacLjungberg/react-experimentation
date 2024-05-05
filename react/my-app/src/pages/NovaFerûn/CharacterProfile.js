@@ -1,9 +1,10 @@
 import React from 'react';
 import './characterProfileStyle.css';
 
-export default function Template({name, summary, mask, hiddenFace, drives, plans, appearence, bio, abilities}){
+export default function Template({name, summary, mask, hiddenFace, drives, plans, appearence, bio, abilities, other, image}){
 
-    return  <div className="characterProfileBox">
+    return  <div className = "characterProfileFull">
+    <div className="characterProfileBox">
         <div className="characterProfileName">{name}</div>
         <div className="characterProfileSummary">{summary}</div>
             <div style={{columnCount: 2}}>
@@ -19,6 +20,10 @@ export default function Template({name, summary, mask, hiddenFace, drives, plans
             </div>
 
             {abilities && <div className ="characterProfileAbilities"><b>Abilities: </b>{abilities}</div>}
+
+            {other}
+    </div>
+        <div className="characterProfileImg">{image}</div>
     </div>
 
 }

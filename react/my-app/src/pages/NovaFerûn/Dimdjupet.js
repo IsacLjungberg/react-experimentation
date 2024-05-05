@@ -37,9 +37,6 @@ export default function ErikCederén({dictionary}){
         <h2>Flodsvandrarna</h2>
 
         <h2>Skuggbladen</h2>
-
-        <h2>Notes</h2>
-        <Notes saveName = {pageTitle}/>
     </>
 
 }
