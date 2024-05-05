@@ -1,22 +1,28 @@
 import React from 'react';
 import './characterProfileStyle.css';
 
-export default function Template({name, summary, mask, hiddenFace, drives, plans, appearence, bio, abilities, other, image}){
+export default function Template({name, summary, elements, abilities, other, image}){
+
+    var asList = [];
+
+    if(elements){
+        for(let i = 0; i < Object.keys(elements).length; i++){
+            const currentKey = Object.keys(elements)[i];
+            asList.push([currentKey, elements[currentKey]]);
+        }
+    }
 
     return  <div className = "characterProfileFull">
     <div className="characterProfileBox">
         <div className="characterProfileName">{name}</div>
         <div className="characterProfileSummary">{summary}</div>
             <div style={{columnCount: 2}}>
-
-                <div className="characterProfileElement"><path className = "fieldTitle">Mask: </path>{mask}</div>
-                <div className="characterProfileElement"><path className = "fieldTitle">Hidden Face: </path>{hiddenFace}</div>
-
-                
-                {appearence && <div className="characterProfileElement"><path className = "fieldTitle">Appearence: </path>{appearence}</div>}
-                <div className="characterProfileElement"><path className = "fieldTitle">Drives: </path>{drives}</div> 
-                <div className="characterProfileElement"><path className = "fieldTitle">Plans: </path>{plans}</div> 
-                <div className="characterProfileElement"><path className = "fieldTitle">Bio: </path>{bio}</div> 
+                {asList.map(([key, value]) => 
+                    <div className = "characterProfileElementBox">
+                        <div className = "characterProfileElementName">{key}</div>
+                        <div className = "characterProfileElementValue">{value}</div>
+                    </div>)
+                }
             </div>
 
             {abilities && <div className ="characterProfileAbilities"><b>Abilities: </b>{abilities}</div>}

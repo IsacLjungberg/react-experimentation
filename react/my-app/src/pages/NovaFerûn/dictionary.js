@@ -3,7 +3,7 @@ import ZarasterCalendar from "./ZarasterCalendar";
 
 export default function dictionary(){
     return {
-        ErikCederén: <a href = "/pages/NovaFerûn/ErikCederén">Erik Cederên</a>,
+        ErikCederén: <a href = "/pages/NovaFerûn/ErikCederén">Erik Cederén</a>,
         Dimdjupet: <a href = "/pages/NovaFerûn/Dimdjupet">Dimdjupet</a>,
             Karanax: <a href = "/pages/NovaFerûn/Dimdjupet">Karanax</a>,
             Döttsviskarna: <a href = "/pages/NovaFerûn/Dimdjupet">Döttsviskarna</a>,

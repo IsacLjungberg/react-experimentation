@@ -27,16 +27,16 @@
     padding-bottom: 10px;
 }
 
-.fieldTitle{
-    font-size: 75%;
-    display: block;
-    text-decoration: underline;
-}
-
-.characterProfileElement{
+.characterProfileElementBox{
     padding-bottom: 10px;
     break-inside: avoid-column;
     border-top: solid black;
+}
+
+.characterProfileElementName{
+    font-size: 75%;
+    display: block;
+    text-decoration: underline;
 }
 
 .characterProfileAbilities{
