@@ -7,6 +7,11 @@ export default function CurrentSession({dictionary}){
 
     return <>
         <h1>{pageTitle}</h1>
+
+        <h2>Bookkeeping</h2>
+        {dictionary.ZarasterCalendar}
+
+        <h2>Stuff</h2>
         <ul>Grimroot loot, på personerna och utspridda i strukturen, främst olika ädelstenar och konstobjekt (4000/4000)
             <li>Ring of shield (1/long rest): 500gp</li>
             <li>Amulet of lost voices (speak with dead twice per long rest): 500gp</li>
@@ -28,6 +33,13 @@ export default function CurrentSession({dictionary}){
             <li>Byn frodas, och i ordningsalen finns det nu en teleportation circle</li>
         </ul>
         
+        <h3>Existerande notes, sorterar senare</h3>
+        <ul>
+            <li>Zalasan den Givmilde, basically Raphael</li>
+            <li>Måste bestämma historien med Zetheris och skriva ner det</li>
+        </ul>
+
+        <h3>Notes</h3>
         <Notes saveName = {pageTitle}/>
     </>
 }

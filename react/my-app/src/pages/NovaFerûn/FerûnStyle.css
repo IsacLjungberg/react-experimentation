@@ -28,3 +28,11 @@ textarea{
     margin-top: 20px;
     display: block;
 }
+
+.standardList {
+    list-style-type: disc;
+
+    & li{
+    margin-left: 20px;
+    }
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import Notes from '../../Notes'
+import Minimizable from './Minimizable';
 
 export default function NovaFerûn({dictionary}){
 
@@ -19,6 +20,10 @@ export default function NovaFerûn({dictionary}){
         <h1>{pageTitle}</h1>
         {listOfAllAsString}
         
+
+        <br/><br/>
+
+        <Minimizable defaultState={false} buttonText = "Click here" element = {<div>Has been expanded</div>}/>
 
 
         <Notes saveName = {pageTitle}/>

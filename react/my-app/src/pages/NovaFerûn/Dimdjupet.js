@@ -5,20 +5,13 @@ import KaranaxProfile from './Profiles/KaranaxProfile'
 import KaranaxStatblock from './Assets/blackDragonKaranax.png'
 import VenryxProfile from './Profiles/VenryxProfile';
 import SenaraxProfile from './Profiles/SenaraxProfile';
+import Minimizable from './Minimizable';
+import AratakProfile from './Profiles/AratakProfile';
+import UrsaProfile from './Profiles/UrsaProfile';
 
 export default function ErikCederén({dictionary}){
 
     const pageTitle = "Dimdjupet";
-
-    const [karaStatblockVisible, setKaraStatblockVisible] = useState(false);
-
-    const expandKaraStatblock = () => {
-        if(karaStatblockVisible){
-            setKaraStatblockVisible(false);
-        } else {
-            setKaraStatblockVisible(true);
-        }
-    }
 
     return <>
         <h1>{pageTitle}</h1>
@@ -26,17 +19,24 @@ export default function ErikCederén({dictionary}){
         <h2>Karanax</h2>
         <KaranaxProfile/>
 
-        <button onClick = {expandKaraStatblock}>Karanax Statblock</button>
-        {karaStatblockVisible && <img src = {KaranaxStatblock} alt = "altered black dragons statblock" width="100%"/>}
-        <br/><br/>
+        <Minimizable defaultState={true} buttonText = "Karanax Statblock" element = {<img src = {KaranaxStatblock} alt = "altered black dragons statblock" width="100%"/>}/>
+
         <VenryxProfile/>
 
         <h2>Döttsviskarna</h2>
         <SenaraxProfile/>
 
+        <ul className = "standardList">Andra
+            <li>Urak och Renara, lärlingar till Senarax</li>
+        </ul>
+
         <h2>Flodsvandrarna</h2>
 
+        <AratakProfile dictionary = {dictionary}/>
+
         <h2>Skuggbladen</h2>
+
+        <UrsaProfile dictionary = {dictionary}/>
     </>
 
 }

@@ -13,12 +13,12 @@ import Template from './pages/Template';
 
 import NovaFerûn from './pages/NovaFerûn/NovaFerûn';
 import FerûnWrapper from './pages/NovaFerûn/FerûnWrapper';
-  import ErikCederén from './pages/NovaFerûn/ErikCederén';
   import Dimdjupet from './pages/NovaFerûn/Dimdjupet';
   import Nattsångarna from './pages/NovaFerûn/Nattsångarna';
   import VandrarUtposten from './pages/NovaFerûn/VandrarUtposten';
   import CurrentSession from './pages/NovaFerûn/CurrentSession';
 import ferûnDictionaryFunction from './pages/NovaFerûn/dictionary';
+import ZarasterCalendar from './pages/NovaFerûn/ZarasterCalendar';
 
 
 const dictionary = {
@@ -41,10 +41,10 @@ const router = createBrowserRouter([
 
   {path: '/pages/NovaFerûn/NovaFerûn', element: <FerûnWrapper Contents = {NovaFerûn} dictionary = {ferûnDictionary}/>},
   {path: '/pages/NovaFerûn', element: <FerûnWrapper Contents = {NovaFerûn} dictionary = {ferûnDictionary}/>},
-  {path: '/pages/NovaFerûn/ErikCederén', element: <FerûnWrapper Contents = {ErikCederén} dictionary = {ferûnDictionary}/>},
   {path: '/pages/NovaFerûn/Dimdjupet', element: <FerûnWrapper Contents = {Dimdjupet} dictionary = {ferûnDictionary}/>},
   {path: '/pages/NovaFerûn/Nattsångarna', element: <FerûnWrapper Contents = {Nattsångarna} dictionary = {ferûnDictionary}/>},
   {path: '/pages/NovaFerûn/VandrarUtposten', element: <FerûnWrapper Contents = {VandrarUtposten} dictionary = {ferûnDictionary}/>},
+  {path: '/pages/NovaFerûn/ZarasterCalendar', element: <FerûnWrapper Contents = {ZarasterCalendar} dictionary = {ferûnDictionary}/>},
   {path: '/pages/NovaFerûn/CurrentSession', element: <FerûnWrapper Contents = {CurrentSession} dictionary = {ferûnDictionary}/>},
 ])
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import CharacterProfile from '../CharacterProfile'
+import characterArt from '../Assets/ErikCederén.jpg'
 
 export default function ErikCederénProfile({dictionary}){
     return <>
@@ -40,7 +41,7 @@ export default function ErikCederénProfile({dictionary}){
                 <div>Massive wealth</div>
             }
 
-            other = "Test"
+            image = {<img height = "500px" src = {characterArt}/>}
         />
     </>
 }

@@ -1,4 +1,5 @@
 import Nattsångarna from "./Nattsångarna";
+import ZarasterCalendar from "./ZarasterCalendar";
 
 export default function dictionary(){
     return {
@@ -11,5 +12,6 @@ export default function dictionary(){
         Nattsångarna: <a href = "/pages/NovaFerûn/Nattsångarna">Nattsångarna</a>,
         VandrarUtposten: <a href = "/pages/NovaFerûn/VandrarUtposten">Vandrar Utposten</a>,
         CurrentSession: <a href = "/pages/NovaFerûn/CurrentSession">Current Session</a>,
+        ZarasterCalendar: <a href = "/pages/NovaFerûn/ZarasterCalendar">Zaraster Calendar</a>,
     }
 }

@@ -1,13 +1,13 @@
 import React from 'react';
 import CharacterProfile from '../CharacterProfile'
 
-export default function TemplateProfile({dictionary}){
+export default function TenrekkProfile({dictionary}){
     return <>
         <CharacterProfile 
-            name = ""
-            summary = ""
-            mask = ""
-            hiddenFace = ""
+            name = "Tenrekk"
+            summary = "Vätte alkemist"
+            mask = "Självisk och sarkastisk"
+            hiddenFace = "Egentligen relativt ärlig, med en soft spot för drabbade av svåra situationer"
             drives = 
             {<ul>
                 <li></li>
@@ -24,18 +24,16 @@ export default function TemplateProfile({dictionary}){
             }
             bio = {
                     <ul>
-                        <li>Age: </li>
-                        <li>Species: </li>
+                        <li>Age: 42</li>
+                        <li>Species: Goblin</li>
                     </ul>
                 }
             
             abilities = {
                 <div>
-                    Test
+                    1st level alchemist artificer
                 </div>
             }
-
-            other = ""
         />
     </>
 }
